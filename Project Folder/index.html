@@ -2,38 +2,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Class Activities - Home</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
 </head>
 <body>
+  <!-- Navigation -->
   <nav>
-    <!-- Navigation Bar -->
-    <ul>
+    <ul class="navbar">
       <li><a href="index.html">Home</a></li>
       <li><a href="stocks.html">Stocks</a></li>
       <li><a href="dogs.html">Dogs</a></li>
     </ul>
   </nav>
 
+  <!-- Main Content -->
   <main>
     <h1>Welcome to Class Activities</h1>
+    <div id="quote">Loading quote...</div>
     <button class="custom-btn" onclick="location.href='stocks.html'">Stocks</button>
     <button class="custom-btn" onclick="location.href='dogs.html'">Dogs</button>
-    <div id="quote"></div>
   </main>
 
+  <!-- Audio Instruction Box -->
   <div class="audio-box">
-    <h2>Voice Commands</h2>
+    <h2>🎙 Voice Commands</h2>
     <p>Say "Hello" — Alerts Hello World</p>
-    <p>Say "Change the color to blue" — Changes background</p>
-    <p>Say "Navigate to dogs" — Goes to Dogs page</p>
+    <p>Say "Change the color to blue" — Changes background color</p>
+    <p>Say "Navigate to dogs" — Navigates to Dogs page</p>
     <button onclick="startVoice()">Turn On Voice</button>
     <button onclick="stopVoice()">Turn Off Voice</button>
   </div>
 
+  <!-- Scripts -->
   <script src="scripts/home.js"></script>
   <script src="scripts/voice.js"></script>
 </body>
