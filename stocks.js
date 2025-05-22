@@ -2,7 +2,7 @@
 async function fetchStockData() {
   const ticker = document.getElementById('stockInput').value.toUpperCase();
   const days = document.getElementById('dayRange').value;
-  const apiKey = ch8FXQciz2Iq1vCcz8NuaUZl0puGFX4X;
+  const apiKey = 'YOUR_POLYGON_API_KEY';
   const end = new Date();
   const start = new Date();
   start.setDate(end.getDate() - days);
