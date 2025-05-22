@@ -1,0 +1,50 @@
+#Dogs Page
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dogs Page</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+  <script src="https://unpkg.com/simple-slider/dist/simpleslider.min.js"></script>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <ul class="navbar">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="stocks.html">Stocks</a></li>
+      <li><a href="dogs.html">Dogs</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Dog Carousel</h1>
+    <div id="carousel" class="simple-slider"></div>
+
+    <h2>Dog Breeds</h2>
+    <div id="breedButtons"></div>
+    <div id="breedInfo" style="display: none;"></div>
+  </main>
+
+  <!-- Audio Instructions -->
+  <div class="audio-box">
+    <h2>🎙 Voice Commands</h2>
+    <p>Say: "Hello" — Alerts Hello World</p>
+    <p>Say: "Change the color to blue" — Changes background</p>
+    <p>Say: "Navigate to dogs" — Goes to Dogs page</p>
+    <p>Say: "Load Dog Breed pug" — Shows info about Pug</p>
+    <button onclick="startVoice()">Turn On Voice</button>
+    <button onclick="stopVoice()">Turn Off Voice</button>
+  </div>
+
+  <script src="scripts/dogs.js"></script>
+  <script src="scripts/voice.js"></script>
+  <script>
+    window.onload = () => {
+      startVoice();
+    };
+  </script>  
+</body>
+</html>

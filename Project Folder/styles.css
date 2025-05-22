@@ -1,0 +1,59 @@
+/* styles.css */
+/* General Layout */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: white;
+  }
+  
+  /* Navigation Bar */
+  .navbar {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    margin: 0;
+    padding: 12px 0;
+  }
+  
+  .navbar li {
+    margin: 0 20px;
+  }
+  
+  .navbar li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .navbar li a:hover {
+    color: #FFD700; /* Yellow on hover */
+  }
+  
+  /* Custom Button */
+  .custom-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    margin: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .custom-btn:hover {
+    background-color: #45a049;
+  }
+  
+  /* Audio Box */
+  .audio-box {
+    margin-top: 50px;
+    padding: 20px;
+    border-top: 1px solid #ccc;
+    background-color: #f4f4f4;
+  }
+  
